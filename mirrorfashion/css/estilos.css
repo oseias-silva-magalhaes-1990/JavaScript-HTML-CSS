@@ -52,11 +52,11 @@ h1+p{
 
 /*p::first-line{
 	font-variant: small-caps;
-}*/
+}
 
 :not(p)+p::first-line{
 	font-variant:	small-caps;
-}
+}*/
 
 #rodape{
 	color #777;
@@ -193,6 +193,8 @@ header{
 	margin: 10px 0;
 	padding: 10px;
 	width: 445px;
+	border-radius: 4px;
+	box-shadow: 1px 1px 4px #999;
 }
 
 .painel li{
@@ -208,6 +210,7 @@ header{
 	font-size: 24px;
 	font-weight: bold;
 	text-transform: uppercase;
+	text-shadow: 3px 3px 5px gray;
 
 	margin-bottom: 10px;
 }
