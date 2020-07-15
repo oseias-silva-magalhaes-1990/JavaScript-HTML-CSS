@@ -125,6 +125,22 @@ header{
 	position: relative;
 }
 
+.busca{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.busca button{
+	background-image: url(../img/busca.png);
+	background-repeat: no-repeat;
+	border: none;
+
+	width: 22px;
+	height: 22px;
+
+	text-indent: -9999px;
+}
+
 .busca, 
 .menu-departamentos{
 	background-color: #DCDCDC;
@@ -134,6 +150,10 @@ header{
 	margin-right: 10px;
 	width: 230px;
 	float: left;
+}
+
+.busca input[type=search]{
+	width: 170px;
 }
 
 .busca h2,
@@ -180,10 +200,6 @@ header{
 	text-transform: uppercase;
 }
 
-.busca input[type=search]{
-	width: 170px;
-}
-
 .destaque{
 	margin-top: 10px;
 	padding-top: 10px;
@@ -193,8 +209,8 @@ header{
 	margin: 10px 0;
 	padding: 10px;
 	width: 445px;
-	border-radius: 4px;
-	box-shadow: inset 1px 1px 4px #999;
+	border-radius: 5px;
+	box-shadow: inset 1px 1px 5px #999;
 }
 
 .painel li{
@@ -206,12 +222,24 @@ header{
 	padding-bottom: 10px;
 }
 
+.painel li:hover{
+	background-color: rgba(255,255,255,0.8);
+	box-shadow: 0 0 8px #333;
+	transition: 0.7s;
+	transform: scale(1.05) rotate(-5deg);
+}
+
+.painel li:nth-child(2n):hover{
+	transform: scale(1.05) rotate(5deg);
+}
+
 .painel h2{
 	font-size: 24px;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-shadow: 3px 3px 5px gray;
 	margin-bottom: 10px;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.2)
 }
 
 .painel h2:before{
@@ -228,15 +256,20 @@ header{
 }
 
 .novidades{
-	background-color: #F5DCDC;
+	background: linear-gradient(#F5DCDC, #BEBEF4);
+
 }
 
 .mais-vendidos{
-	background-color: #DCDCF5;
+	background: linear-gradient(#DCDCF5, #F4BEBE);
 }
 
 .novidades{
 	float: left;
+}
+
+.novidades li{
+	transform: scale(1,1);
 }
 
 .mais-vendidos{
@@ -283,17 +316,6 @@ footer .container{
 .social li{
 	float: left;
 	margin-left: 25px;
-}
-
-.busca button{
-	background-image: url(../img/busca.png);
-	background-repeat: no-repeat;
-	border: none;
-
-	width: 22px;
-	height: 22px;
-
-	text-indent: -9999px;
 }
 
 .menu-opcoes a:hover{
